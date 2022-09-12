@@ -1,6 +1,8 @@
 package com.example.shoppinglist.presentation
 
+import android.content.ContentValues
 import android.content.Context
+import android.net.Uri
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -15,20 +17,13 @@ import com.example.shoppinglist.presentation.app.ShoppingListApp
 import com.example.shoppinglist.presentation.viewmodels.ShopItemViewModel
 import com.example.shoppinglist.presentation.viewmodels.ViewModelFactory
 import javax.inject.Inject
+import kotlin.concurrent.thread
 
 
 class ShopItemFragment : Fragment() {
 
     private lateinit var viewModel: ShopItemViewModel
     private lateinit var onEditingFinishedListener: OnEditingFinishedListener
-
-    @Inject
-    lateinit var viewModelFactory: ViewModelFactory
-
-    private val component by lazy {
-        (requireActivity().application as ShoppingListApp).component
-    }
-
 
     private var _binding: FragmentShopItemBinding? = null
     private val binding: FragmentShopItemBinding
@@ -37,8 +32,16 @@ class ShopItemFragment : Fragment() {
     private var screenMode: String = MODE_UNKNOWN
     private var shopItemId: Int = ShopItem.UNDEFINED_ID
 
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
+
+    private val component by lazy {
+        (requireActivity().application as ShoppingListApp).component
+    }
+
     override fun onAttach(context: Context) {
         component.inject(this)
+
         super.onAttach(context)
         if (context is OnEditingFinishedListener) {
             onEditingFinishedListener = context
@@ -80,7 +83,7 @@ class ShopItemFragment : Fragment() {
     private fun launchRightMode() {
         when (screenMode) {
             MODE_EDIT -> launchEditMode()
-            MODE_ADD  -> launchAddMode()
+            MODE_ADD -> launchAddMode()
         }
     }
 
@@ -125,6 +128,17 @@ class ShopItemFragment : Fragment() {
                 binding.etName.text?.toString(),
                 binding.etCount.text?.toString()
             )
+//            thread {
+//                context?.contentResolver?.insert(
+//                    Uri.parse("content://com.example.shoppinglist/shop_items"),
+//                    ContentValues().apply {
+//                        put("id", 0)
+//                        put("name", binding.etName.text?.toString())
+//                        put("count", binding.etCount.text?.toString()?.toInt())
+//                        put("enabled", true)
+//                    }
+//                )
+//            }
         }
     }
 
