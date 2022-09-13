@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F8C346"
+        android:background="@drawable/backgroundcolor"
         tools:context=".presentation.ShopItemFragment">
 
         <com.google.android.material.textfield.TextInputLayout

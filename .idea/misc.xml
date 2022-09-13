@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/backgroundcolor.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/item2color.xml" value="0.164" />
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/itemcolor.xml" value="0.164" />
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/itemcolors.xml" value="0.164" />
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/splashcolor.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout-land/activity_main.xml" value="0.1765625" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_shop_item.xml" value="0.19635416666666666" />
