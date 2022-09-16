@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/backgroundcolor"
+        android:background="#4B00ACC1"
         tools:context=".presentation.ShopItemFragment">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -70,6 +70,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#1E88E5"
             android:text="@string/save_btn"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

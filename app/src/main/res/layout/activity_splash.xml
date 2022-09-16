@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#43A047"
+    android:background="#4B00ACC1"
     tools:context=".presentation.SplashActivity">
 
     <TextView
         android:id="@+id/tv_splash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/arial_rouded_mt_bold"
+        android:fontFamily="@font/aalbionicbold"
         android:text="@string/write_your_purchases"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,15 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/backgroundcolor.xml" value="0.164" />
+        <entry key="..\:/ShoppingList/app/src/main/res/drawable/bt_float.xml" value="0.16" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/item2color.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/itemcolor.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/itemcolors.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/drawable/splashcolor.xml" value="0.164" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout-land/activity_main.xml" value="0.1765625" />
-        <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_main.xml" value="0.19635416666666666" />
+        <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_shop_item.xml" value="0.19635416666666666" />
-        <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/ShoppingList/app/src/main/res/layout/activity_splash.xml" value="0.33" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/fragment_shop_item.xml" value="0.19635416666666666" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/item_shop_disabled.xml" value="0.19635416666666666" />
         <entry key="..\:/ShoppingList/app/src/main/res/layout/item_shop_enabled.xml" value="0.19635416666666666" />
